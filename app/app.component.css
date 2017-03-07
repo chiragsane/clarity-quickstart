@@ -12,6 +12,10 @@ span.title {
     font-size: 24px !important;
 }
 
+.content-area {
+    padding: 0px !important;
+}
+
 a.nav-link {
     margin: 0px !important;
     padding: 10px 30px !important;
@@ -44,6 +48,15 @@ button.nav-icon {
     background: inherit;
     color: white;
     border: none;
+    min-width: 60px;
+}
+
+button.nav-icon[name="sideBarToggle"] {
+    width: 70px;
+}
+
+header.min-width {
+    width: 10px;
 }
 
 button.nav-icon i {

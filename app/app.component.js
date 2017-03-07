@@ -9,13 +9,16 @@ var core_1 = require("@angular/core");
 var AppComponent = (function () {
     function AppComponent() {
     }
+    AppComponent.prototype.toggleSideBar = function () {
+        document.getElementById("wrapper").classList.toggle('toggled');
+    };
     return AppComponent;
 }());
 AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
         templateUrl: './app/app.component.html',
-        styleUrls: ['./app/app.component.css']
+        styleUrls: ['./app/app.component.css', './app/simple-sidebar.css']
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;
