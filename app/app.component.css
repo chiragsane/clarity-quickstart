@@ -154,6 +154,7 @@ a.card.clickable:hover {
 }
 
 #content {
+    overflow-y: scroll;
     border: 5px solid #006A91;
     width: 230px;
     height: 285px;

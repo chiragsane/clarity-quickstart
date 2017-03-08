@@ -8,7 +8,7 @@
         </div>
         <div class="header-actions">
             <button class="nav-icon"><img src="app/resources/India.png" alt=""> </button>
-            <button class="nav-icon"><i class="material-icons">aspect_ratio</i></button>
+            <button class="nav-icon"><i class="material-icons">settings_overscan</i></button>
             <button class="nav-icon"><i class="material-icons">notifications</i><span class="badge badge-danger">3</span></button>
             <button class="nav-icon"><i class="material-icons">chat</i></button>
             <button class="nav-icon" name="sideBarToggle" (click)="toggleSideBar()"><i class="material-icons">person</i><i class="material-icons">keyboard_arrow_down</i></button>
@@ -32,9 +32,39 @@
                 </ul>
             </div>
             <div id="page-content-wrapper">
-                <div id="trapezoid" (click)="toggleProject()">Toggle Class</div>
+                <div id="trapezoid" (click)="toggleProject()">Select Project</div>
                 <div id="content">
-                    This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph.
+                    <clr-stack-view>
+                        <clr-stack-block>
+                            <clr-stack-label>Information Technology</clr-stack-label>
+                            <clr-stack-block>
+                                <clr-stack-label>Location Airoli</clr-stack-label>
+                                <clr-stack-block>
+                                    <clr-stack-label class="level3">BU Digital</clr-stack-label>
+                                    <clr-stack-block>
+                                        <clr-stack-label class="level4">Manager<br><span class="manager_name">Vijay Kumar</span></clr-stack-label>
+                                    </clr-stack-block>
+                                    <clr-stack-block>
+                                        <clr-stack-label class="level4">Manager<br><span class="manager_name">Hemant Chauhan</span></clr-stack-label>
+                                    </clr-stack-block>
+                                    <clr-stack-block>
+                                        <clr-stack-label class="level4">Manager<br><span class="manager_name">Rahul Punjabi</span></clr-stack-label>
+                                    </clr-stack-block>
+                                </clr-stack-block>
+                            </clr-stack-block>
+                            <clr-stack-block>
+                                <clr-stack-label>Location Powai</clr-stack-label>
+                            </clr-stack-block>
+                        </clr-stack-block>
+
+                        <clr-stack-block>
+                            <clr-stack-label>Automation</clr-stack-label>
+                        </clr-stack-block>
+
+                        <clr-stack-block>
+                            <clr-stack-label>Insurance</clr-stack-label>
+                        </clr-stack-block>
+                    </clr-stack-view>
                 </div>
                 <div class="container-fluid">
                     <div class="row">
