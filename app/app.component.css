@@ -34,10 +34,16 @@ nav.sidenav {
     min-width: 100px;
     width: 7% !important;
     background: #006A91;
+    border-right-width: 0px;
     -webkit-transition: all 0.8s ease;
     -moz-transition: all 0.8s ease;
     -o-transition: all 0.8s ease;
     transition: all 0.8s ease;
+}
+
+span.badge {
+    vertical-align: top;
+    margin-left: -12px;
 }
 
 span.nav-button i {
@@ -53,6 +59,10 @@ button.nav-icon {
 
 button.nav-icon[name="sideBarToggle"] {
     width: 70px;
+}
+
+button.nav-icon:first-child {
+    margin-right: 15px !important;
 }
 
 header.min-width {
@@ -106,11 +116,64 @@ a.card.clickable:hover {
     border: 1px solid #BBB;
 }
 
+.card-block {
+    border: 10px solid #006A91;
+    border-bottom: 10px solid #006A91 !important;
+}
+
 
 /********************           TRIAL           ************************/
 
-.dropdown-menu {
-    height: 1010%;
-    width: 250px;
-    box-shadow: -10px 0px 15px #DDD;
+#trapezoid {
+    color: white;
+    text-align: center;
+    margin-top: 115px;
+    margin-left: 20px;
+    border-bottom: 20px solid #006A91;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    height: 0px;
+    width: 285px;
+    transform: rotate(90deg);
+    transform-origin: left top 0;
+    -webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
+    transition: all 0.8s ease;
+    position: fixed;
+    z-index: 10;
+}
+
+#trapezoid.disp {
+    margin-left: 250px;
+    -webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
+    transition: all 0.8s ease;
+    transition-delay: 0.1s;
+}
+
+#content {
+    border: 5px solid #006A91;
+    width: 230px;
+    height: 285px;
+    margin-left: -330px;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    position: fixed;
+    z-index: 2;
+    margin-top: 115px;
+}
+
+#content.disp {
+    margin-left: 0px;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    z-index: 1;
+    background: white;
+    margin-top: 115px;
 }

@@ -17,7 +17,8 @@
             '@angular/material': 'https://unpkg.com/@angular/material/bundles/material.umd.js',
             'rxjs': 'npm:rxjs',
             'angular-in-memory-web-api': 'npm:angular-in-memory-web-api/bundles/in-memory-web-api.umd.js',
-            'clarity-angular': 'npm:clarity-angular'
+            'clarity-angular': 'npm:clarity-angular',
+            'ng2-charts': 'npm:ng2-charts'
         },
         packages: {
             app: {
@@ -29,6 +30,10 @@
             },
             'clarity-angular': {
                 main: './clarity-angular.umd.js',
+                defaultExtension: 'js'
+            },
+            'ng2-charts': {
+                main: './index.js',
                 defaultExtension: 'js'
             }
         }

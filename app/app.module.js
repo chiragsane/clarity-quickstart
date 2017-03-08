@@ -8,6 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var clarity_angular_1 = require("clarity-angular");
+var ng2_charts_1 = require("ng2-charts");
 var app_component_1 = require("./app.component");
 var AppModule = (function () {
     function AppModule() {
@@ -17,7 +18,8 @@ var AppModule = (function () {
 AppModule = __decorate([
     core_1.NgModule({
         imports: [platform_browser_1.BrowserModule,
-            clarity_angular_1.ClarityModule.forRoot()],
+            clarity_angular_1.ClarityModule.forRoot(),
+            ng2_charts_1.ChartsModule],
         declarations: [app_component_1.AppComponent],
         bootstrap: [app_component_1.AppComponent]
     })

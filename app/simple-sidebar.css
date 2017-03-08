@@ -14,6 +14,11 @@ body {
     width: 80px;
 }
 
+.user {
+    padding: 10px 0px !important;
+    line-height: 40px !important;
+}
+
 
 /* Toggle Styles */
 
